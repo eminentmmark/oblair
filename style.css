@@ -192,6 +192,7 @@ span{
 
 .about-img img{
 	width: 30vw;
+	border-radius: 50%;
 }
 
 .heading{
@@ -451,7 +452,7 @@ span{
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 0.9rem 15% 0.4rem;
+	padding: 0.9rem 15% 0.75rem;
 	background: var(--second-bg-color);
 }
 
@@ -670,15 +671,47 @@ span{
 	transition: 3s;
 }
 
-.services2 {
-	height: 12vh;
+.services2{
+/*	height: 12vh;*/
 	width: 100%;
 	margin: auto;
 	text-align: center;
-	padding: 170px 0% 0px;
-}
-
-.services2-text {
+	padding: 20px 0% 0px;
 	text-align: center;
 	font-size: 20px;
+}
+
+.services3{
+	padding: 0 10% 0;
+}
+
+.services3 h2{
+	padding-bottom: 7px;
+}
+
+.services3 p{
+	padding: .2rem;
+}
+
+.services3-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.4rem;
+}
+
+.services3-container .services3-box{
+	flex: 1 1 20rem; /* for the flex-wrap */
+	background: var(--second-bg-color);
+	padding: 2.5rem 2rem 3rem;
+	border-radius: 2rem;
+	text-align: center;
+	border: .07rem solid var(--main-color);
+	transition: .5s ease;
+}
+
+.services3-container .services3-box:hover{
+	border-color: var(--main-color);
+	transform: scale(1.05);
 }
