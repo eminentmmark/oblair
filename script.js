@@ -25,7 +25,7 @@
 				});
 			};
 		});
-// sticky navbar
+	// sticky navbar
 		let header = document.querySelector('header');
 
 		header.classList.toggle('sticky', window.scrollY > 100);
@@ -47,7 +47,7 @@
 
 // typed js
 	const typed = new Typed('.multiple-text', {
-		strings: ['DevOps Engineer', 'Digital Marketer', 'Network Architect', 'Software Developer', 'Webmaster', 'Writer and a Speaker'],
+		strings: ['DevOps Engineer', 'Digital Marketer', 'Network Architect', 'Webmaster', 'Writer and a Speaker'],
 		typeSpeed: 100,
 		backSpeed: 100,
 		backDelay: 1000,
