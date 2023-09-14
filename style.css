@@ -365,7 +365,7 @@ span{
 /*	width: 67px;*/  /*  use X% instead of Xpxfor adjusting the length of the input-box  */
 	font-size: 1.2rem;
 	flex-basis: 48%;
-	margin: 0rem 0 2.5rem;
+	margin: 0rem 0 0rem;
 }
 
 .contact-col p{
@@ -511,8 +511,12 @@ span{
 	}
 	/*.home-content p{
 		font-size: 1.45rem;
+	}*/
+	.buto{
+		width: 45%;
+		gap: 1.25rem;
 	}
-	.about-content p{
+	/*.about-content p{
 		font-size: 1.45rem;
 	}*/
 	.services{
@@ -526,6 +530,9 @@ span{
 	}
 	.contact{
 		min-height: auto;
+	}
+	.row{
+		flex-direction: column;
 	}
 	.brands p{
 		font-size: 1.4rem;
@@ -579,6 +586,10 @@ span{
 	}
 	.home-img img{
 		width: 90vw;
+	}
+	.buto{
+		width: 50%;
+		flex-direction: column;
 	}
 	.about-img img{
 		width: 90vw;
