@@ -42,7 +42,7 @@
 
 	ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 	ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
-	ScrollReveal().reveal('.home-content h1, .about-img, .contact-col', { origin: 'left' });
+	ScrollReveal().reveal('.home-content h1, .about-img, .contact-col, .services3-container', { origin: 'left' });
 	ScrollReveal().reveal('.home-content p, .about-content, .brands', { origin: 'right' });
 
 // typed js

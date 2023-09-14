@@ -669,7 +669,7 @@ span{
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1.75rem 3% 1rem;
+	padding: 1.75rem 10% 1rem;
 	background: var(--bg-color);
 	display: flex;
 	justify-content: space-between;
@@ -680,6 +680,13 @@ span{
 .header2.sticky {
 	border-bottom: .075rem solid var(--submain-color);
 	transition: 3s;
+}
+
+.background{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Programer.jpeg')/*background image*/;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
 }
 
 .services2{
