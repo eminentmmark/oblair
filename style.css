@@ -89,6 +89,7 @@ h1, h2, h3, p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	grid-template-columns: repeat(2, 1fr);
 }
 
 .home-img img{
@@ -181,6 +182,13 @@ span{
 	box-shadow: none;
 }
 
+.services{
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
+	background-position: center;
+	background-size: cover;
+}
+
 .about{
 	display: flex;
 	/*justify-content: center;*/
@@ -214,12 +222,12 @@ span{
 	margin: 1rem 0 2rem;
 }
 
-.services h2{
+.skills h2{
 	font-size: 3rem;
 	margin-bottom: 5rem;
 }
 
-.services-container{
+.skills-container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -227,7 +235,7 @@ span{
 	gap: 1.4rem;
 }
 
-.services-container .services-box{
+.skills-container .skills-box{
 	flex: 1 1 20rem; /* for the flex-wrap */
 	background: var(--second-bg-color);
 	padding: 2.5rem 2rem 3rem;
@@ -237,21 +245,21 @@ span{
 	transition: .5s ease;
 }
 
-.services-container .services-box:hover{
+.skills-container .skills-box:hover{
 	border-color: var(--main-color);
 	transform: scale(1.05);
 }
 
-.services-box i{
+.skills-box i{
 	font-size: 3rem;
 	color: var(--submain-color);
 }
 
-.services-box h3{
+.skills-box h3{
 	font-size: 1.8rem;
 }
 
-.services-box p{
+.skills-box p{
 	font-size: 1rem;
 	margin: .8rem 0 2rem;
 }
@@ -274,7 +282,7 @@ span{
 
 .portfolio-container .portfolio-box{
 	position: relative;
-	border-radius: 2rem;
+	border-radius: 1.25rem;
 	box-shadow: 0 0 0.6rem var(--main-color);
 	overflow: hidden;
 	display: flex;
@@ -494,6 +502,91 @@ span{
 
 
 
+/*  services page  */
+
+.header2 {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 1.75rem 10% 1rem;
+	background: var(--bg-color);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100;
+}
+
+.header2.sticky {
+	border-bottom: .075rem solid var(--submain-color);
+	transition: 3s;
+}
+
+.background{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5)/* first color code*/,rgba(0,0,0,0.5)), url('images/Programer.jpeg')/*background image*/;
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.skills2{
+/*	height: 12vh;*/
+	width: 100%;
+	margin: auto;
+	text-align: center;
+	padding: 20px 0% 0px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.skills3{
+	padding: 0 10% 0;
+}
+
+.skills3 h2{
+	padding-bottom: 7px;
+}
+
+.skills3 p{
+	padding: .2rem;
+}
+
+.skills3-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.4rem;
+	padding-bottom: 30px;
+	text-align: center;
+}
+
+.skills3-container .skills3-box{
+	flex: 1 1 20rem; /* for the flex-wrap */
+	background: linear-gradient(rgba(0, 0, 0, 0.75)/* first color code*/,rgba(0,0,0,0.75));
+	padding: 2.5rem 2rem 3rem;
+	border-radius: 2rem;
+	text-align: center;
+	border: .07rem solid var(--main-color);
+	transition: .5s ease;
+}
+
+.skills3-container .skills3-box:hover{
+	border-color: var(--main-color);
+	transform: scale(1.05);
+}
+
+.services-skills{
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	width: 80vw;
+}
+
+
+
 /*breakpoints*/
 
 @media (max-width: 1200px){
@@ -507,7 +600,7 @@ span{
 		padding: 2rem 3%;
 	}
 	section{
-		padding: 7.5rem 3% 2rem;
+		padding: 5.75rem 4% 2rem;
 	}
 	/*.home-content p{
 		font-size: 1.45rem;
@@ -516,10 +609,16 @@ span{
 		width: 45%;
 		gap: 1.25rem;
 	}
+	.about h2{
+		font-size: 3rem;
+	}
+	.about-content{
+		gap: 0;
+	}
 	/*.about-content p{
 		font-size: 1.45rem;
 	}*/
-	.services{
+	.skills{
 		padding-bottom: 7rem;
 	}
 	/*.services-box p{
@@ -527,6 +626,12 @@ span{
 	}*/
 	.portfolio{
 		padding-bottom: 7rem;
+	}
+	.portfolio-container{
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.portfolio-box h4, p{
+		font-size: 1.8rem;
 	}
 	.contact{
 		min-height: auto;
@@ -544,7 +649,10 @@ span{
 
 @media (max-width: 768px){
 	.header{
-		padding: 1rem 3%;
+		padding: 1.25rem 10% 0.25rem;
+	}
+	.header2{
+		padding: 1.25rem 10% 0.25rem;		
 	}
 	#menu-icon{
 		display: block;
@@ -591,6 +699,9 @@ span{
 		width: 50%;
 		flex-direction: column;
 	}
+	.about-content p{
+		padding-bottom: 10px;
+	}
 	.about-img img{
 		width: 90vw;
 	}
@@ -601,21 +712,18 @@ span{
 		width: 70vw;
 		margin-top: 1rem;
 	}
-	.services h2{
+	.skills h2{
 		margin-bottom: 3rem;
 	}
 	/*.services-container{
 		grid-template-columns: repeat(2, 1fr);
 	}*/
-	.services-container{
+	.skills-container{
 		display: flex;
 		flex-direction: column;
 	}
 	.portfolio h2{
 		margin-bottom: 3rem;
-	}
-	.portfolio-container{
-		grid-template-columns: repeat(2, 1fr);
 	}
 	.row{
 		display: flex;
@@ -636,6 +744,9 @@ span{
 	}
 	.brands-col{
 		flex-direction: column;
+	}
+	.footer{
+		padding: 1.25rem 10% 0.5rem;	
 	}
 }
 
@@ -659,77 +770,4 @@ span{
 		text-align: center;
 		margin-top: 2rem;
 	}*/
-}
-
-
-/*  services page  */
-
-.header2 {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	padding: 1.75rem 10% 1rem;
-	background: var(--bg-color);
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 100;
-}
-
-.header2.sticky {
-	border-bottom: .075rem solid var(--submain-color);
-	transition: 3s;
-}
-
-.background{
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Programer.jpeg')/*background image*/;
-	background-position: center;
-	background-size: cover;
-	overflow: hidden;
-}
-
-.services2{
-/*	height: 12vh;*/
-	width: 100%;
-	margin: auto;
-	text-align: center;
-	padding: 20px 0% 0px;
-	text-align: center;
-	font-size: 20px;
-}
-
-.services3{
-	padding: 0 10% 0;
-}
-
-.services3 h2{
-	padding-bottom: 7px;
-}
-
-.services3 p{
-	padding: .2rem;
-}
-
-.services3-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 1.4rem;
-}
-
-.services3-container .services3-box{
-	flex: 1 1 20rem; /* for the flex-wrap */
-	background: var(--second-bg-color);
-	padding: 2.5rem 2rem 3rem;
-	border-radius: 2rem;
-	text-align: center;
-	border: .07rem solid var(--main-color);
-	transition: .5s ease;
-}
-
-.services3-container .services3-box:hover{
-	border-color: var(--main-color);
-	transform: scale(1.05);
 }
