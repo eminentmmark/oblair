@@ -280,7 +280,7 @@ span{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	align-items: center;
-	gap: 1.4rem;
+	gap: 1.8rem;
 }
 
 .portfolio-container .portfolio-box{
@@ -438,8 +438,19 @@ span{
 	cursor: pointer;
 }
 
+.footer{	
+	background: var(--second-bg-color);
+	display: flex;
+	flex-direction: column;
+}
+
 .brands{
+	padding: 5px 0 5px;
 	text-align: center;
+}
+
+.brands h4{
+	padding: 5px 0 0;
 }
 
 .brands p{
@@ -455,16 +466,19 @@ span{
 }
 
 .ewan-logo img{
-	width: 340px;
+	width: 200px;
 }
 
-.footer{
+/*.ait-logo{
+	height: auto;
+}*/
+
+.footer-text{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
-	padding: 0.9rem 15% 0.75rem;
-	background: var(--second-bg-color);
+	padding: 0.9rem 30% 0.75rem;
 }
 
 .footer-text p{
@@ -512,8 +526,8 @@ span{
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1.75rem 10% 1rem;
-	background: var(--bg-color);
+	padding: 1rem 10% 0.6rem;
+	background: /*var(--bg-color)*/ #323946;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -812,6 +826,9 @@ span{
 		text-align: center;
 		padding-bottom: 30px;
 	}
+	.skills-content .btn{
+		font-size: 1.25rem;
+	}
 	.pricing-table .grid{
 		gap: 20px;
 	}
@@ -931,7 +948,14 @@ span{
 		flex-direction: column;
 	}
 	.footer{
+		text-align: center;
 		padding: 1.25rem 10% 0.5rem;	
+	}
+	.footer-text{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
 	}
 }
 
