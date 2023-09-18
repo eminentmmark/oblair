@@ -265,7 +265,10 @@ span{
 }
 
 .portfolio{
-	background: var(--second-bg-color);
+/*	background: var(--second-bg-color);*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.575)/* first color code*/,rgba(0,0,0,0.575)), url('images/africalawtech.jpg')/*background image*/;
+	background-position: center;
+	background-size: cover;
 }
 
 .portfolio h2{
@@ -551,6 +554,10 @@ span{
 	padding: .2rem;
 }
 
+.skills-content p{
+	padding: 0 0 12px;
+}
+
 .skills3-container{
 	display: flex;
 	justify-content: space-between;
@@ -789,6 +796,7 @@ span{
 	}*/
 	.portfolio{
 		padding-bottom: 7rem;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6)/* first color code*/,rgba(0,0,0,0.6)), url('images/africalawtech2.jpg')/*background image*/;
 	}
 	.portfolio-container{
 		grid-template-columns: repeat(2, 1fr);
