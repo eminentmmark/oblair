@@ -438,6 +438,10 @@ span{
 	cursor: pointer;
 }
 
+.row{
+	padding-bottom: 30px;
+}
+
 .footer{	
 	background: var(--second-bg-color);
 	display: flex;
