@@ -198,6 +198,11 @@ span{
 	text-align: center;
 }
 
+.about-content p{
+/*	padding-bottom: .0125rem;*/
+	text-align: left;
+}
+
 .about-img img{
 	width: 30vw;
 	border-radius: 50%;
