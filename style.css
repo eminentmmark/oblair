@@ -53,6 +53,10 @@ h1, h2, h3, p{
 	z-index: 100;
 }
 
+.header img{
+	width: 6vw;
+}
+
 .header.sticky{
 	border-bottom: .075rem solid var(--submain-color);
 	transition: 3s;
