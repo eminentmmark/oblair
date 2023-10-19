@@ -359,26 +359,70 @@ span{
 	color: var(--second-bg-color);
 }
 
+.footer{	
+	background: var(--second-bg-color);
+	display: flex;
+	flex-direction: column;
+}
+
+.no_footer_text{
+	display: flex;
+}
+
+.no_footer_text h4{
+	padding-top: 0.5rem;
+}
+
 .contact{
    /* width: 80%; */
 	margin: 0 10% 0;
-	text-align: center;
+	text-align: left;
+	flex-direction: column;
 }
 
-.contact h2{
-	font-size: 3rem;
-	margin-bottom: 2rem;
+.contact h4{
+/*	font-size: 3rem;*/
+	margin-bottom: 0.5rem;
 }
 
 .row {
-	display: inline-flex;
+	padding-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+/*	gap: 2rem;*/
+}
+
+.row img{
+	width: 9vw;
+	padding-bottom: 0.2rem;
+	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 2rem;
 }
 
 .row span{
 	color: var(--submain-color);
+}
+
+.social-media2 a{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	width: 1.95rem;
+	height: 1.95rem;
+	background: transparent;
+	border: .09rem solid var(--main-color);
+	border-radius: 50%;
+	font-size: 1.5rem;
+	color: var(--main-color);
+	margin: .5rem 1.5rem 0;
+	transition: .5s ease;
+}
+
+.social-media2 a:hover{
+	background: var(--main-color);
+	color: var(--second-bg-color);
+	box-shadow: 0 0 1rem var(--main-color);
 }
 
 .contact-col{
@@ -445,16 +489,6 @@ span{
 .contact form .btn{
 	margin-top: 0.8rem;
 	cursor: pointer;
-}
-
-.row{
-	padding-bottom: 30px;
-}
-
-.footer{	
-	background: var(--second-bg-color);
-	display: flex;
-	flex-direction: column;
 }
 
 .brands{
@@ -940,9 +974,20 @@ span{
 	.portfolio h2{
 		margin-bottom: 3rem;
 	}
+	.no_footer_text{
+		flex-direction: column;
+	}
 	.row{
 		display: flex;
 		flex-direction: column;
+	}
+	/*.rowimg{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}*/
+	.contact{
+		text-align: center;
 	}
 	.contact-col{
 		margin: 0 0 0;
