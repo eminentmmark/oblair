@@ -419,14 +419,14 @@ span{
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-	width: 1.95rem;
-	height: 1.95rem;
+	width: 2.175rem;
+	height: 2.175rem;
 	background: transparent;
 	border: .09rem solid var(--main-color);
 	border-radius: 50%;
 	font-size: 1.5rem;
 	color: var(--main-color);
-	margin: .5rem 1.5rem 0;
+	margin: .5rem 1rem 0;
 	transition: .5s ease;
 }
 
@@ -1007,11 +1007,8 @@ span{
 	.contact-col p{
 		font-size: 1.25rem;
 	}
-	.contact form .input-box input{
-		width: 100%;
-	}
-	.contact form .input-box input, .contact form textarea{
-		font-size: 1.25rem;
+	.social-media2{
+		padding-top: 1rem;
 	}
 	.brands-col{
 		flex-direction: column;
