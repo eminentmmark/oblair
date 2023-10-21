@@ -45,7 +45,7 @@ h1, h2, h3, p{
 	top: 0;
 	left: 0;
 	width: 100%;
-	padding: 1rem 10% 0.6rem;
+	padding: 0.8rem 10% 0.45rem;
 	background: /*var(--bg-color)*/ #323946;
 	display: flex;
 	justify-content: space-between;
@@ -373,17 +373,6 @@ span{
 	padding: 0.5rem 0 0rem;
 }
 
-.servicexp{
-	flex-direction: column;
-	width: 280px;
-	padding-top: 1rem;
-}
-
-.servicexp p{
-	color: var(--text-color);
-	padding-bottom: 0.1rem;
-}
-
 .contact{
    /* width: 80%; */
 	margin: 0 10% 0;
@@ -467,7 +456,7 @@ span{
 	margin: 1rem;
 }
 
-.contact form{
+/*.contact form{
 	max-width: 70rem;
 	margin: 1rem auto 1rem;
 	text-align: center;
@@ -486,11 +475,11 @@ span{
 	color: var(--text-color);
 	background: var(--second-bg-color);
 	border-radius: .8rem;
-	margin: .25rem 0; /*  space in between the forms all round */
+	margin: .25rem 0; /*  space in between the forms all round 
 }
 
 .contact form .input-box input{
-	width: 49%; /*  space in between the forms vertically */
+	width: 49%; /*  space in between the forms vertically
 }
 
 .contact form textarea{
@@ -500,6 +489,17 @@ span{
 .contact form .btn{
 	margin-top: 0.8rem;
 	cursor: pointer;
+}*/
+
+.servicexp{
+	flex-direction: column;
+	width: 280px;
+	padding-top: 1rem;
+}
+
+.servicexp p{
+	color: var(--text-color);
+	padding-bottom: 0.1rem;
 }
 
 .brands{
@@ -835,6 +835,18 @@ span{
 	html{
 		font-size: 92%;
 	}
+	.no_footer_text{
+		space-between: none;
+	}
+	.contact{
+		margin: 0 8% 0;
+	}
+	.servicex{
+		width: 250px;
+	}
+	.brands-col{
+		gap: 1rem;
+	}
 }
 
 @media (max-width: 991px){
@@ -862,6 +874,9 @@ span{
 	}*/
 	.skills{
 		padding-bottom: 7rem;
+	}
+	.logo img{
+		width: 7rem;
 	}
 	/*.services-box p{
 		font-size: 1.55rem;
@@ -894,10 +909,16 @@ span{
 		transform: scale(1.05);
 	}
 	.contact{
-		min-height: auto;
+		margin: 0 3% 0;
 	}
 	.row{
 		flex-direction: column;
+	}
+	.servicex{
+		width: 200px;
+	}
+	.servicexp p{
+		font-size: 1rem;
 	}
 	.brands p{
 		font-size: 1.4rem;
@@ -913,6 +934,9 @@ span{
 	}
 	.header2{
 		padding: 1.25rem 10% 0.75rem;		
+	}
+	.logo img{
+		width: 5rem;
 	}
 	#menu-icon{
 		display: block;
@@ -987,16 +1011,34 @@ span{
 	}
 	.no_footer_text{
 		flex-direction: column;
+		text-align: center;
 	}
 	.row{
 		display: flex;
 		flex-direction: column;
+	}
+	.img{
+		display: flex;
+		justify-content: center;
+		align-items: center;	}
+	.row img{
+	width: 20vw;
 	}
 	/*.rowimg{
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}*/
+	.row h5{
+		font-size: 1.5rem;
+	}
+	.servicex{
+		width: auto;
+/*		width: 380px;*/
+	}
+	.servicexp{
+		width: auto;
+	}
 	.contact{
 		text-align: center;
 	}
