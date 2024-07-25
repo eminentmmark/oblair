@@ -205,7 +205,6 @@ span{
 .about-content p{
 /*	padding-bottom: .0125rem;*/
 	text-align: left;
-	font-size: 2px;
 }
 
 .about-img img{
@@ -521,11 +520,16 @@ span{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	gap: 9rem;
+	gap: 7.5rem;
 }
 
 .ewan-logo img{
 	width: 200px;
+}
+
+.chriva-logo img{
+	width: 200px;
+	border-radius: 50%;
 }
 
 /*.ait-logo{
@@ -848,6 +852,15 @@ span{
 	.brands-col{
 		gap: 1rem;
 	}
+	.ait-logo img{
+		width: 120px;
+	}
+	.chriva-logo img{
+		width: 140px;
+	}
+	.ewan-logo img{
+	width: 140px;
+	}
 }
 
 @media (max-width: 991px){
@@ -926,6 +939,15 @@ span{
 	}
 	.footer{
 		padding: 2rem 3%;
+	}
+	.ait-logo img{
+		width: 120px;
+	}
+	.chriva-logo img{
+		width: 140px;
+	}
+	.ewan-logo img{
+	width: 140px;
 	}
 }
 
