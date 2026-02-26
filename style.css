@@ -97,11 +97,12 @@ h1, h2, h3, p{
 }
 
 .home-img img{
-	width: 35vw;
+	width: 32vw;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	animation: floatImage 4s ease-in-out infinite;
+	animation: floatImage 6s ease-in-out infinite;
+
 }
 
 @keyframes floatImage{
@@ -363,19 +364,28 @@ span{
 	background: var(--second-bg-color);
 	display: flex;
 	flex-direction: column;
+	flex-wrap: inherit;
 }
 
 .no_footer_text{
 	display: flex;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: wrap;
+}
+/*
+.brand{
+	display: flex;
+	justify-content: flex-end;
 }
 
 .no_footer_text h4{
 	padding: 0.5rem 0 0rem;
-}
+}*/
 
 .contact{
    /* width: 80%; */
-	margin: 0 10% 0;
+	margin: 0 5% 0;
 	text-align: left;
 	flex-direction: column;
 }
@@ -504,8 +514,7 @@ span{
 
 .brands{
 	padding: 5px 0 5px;
-	text-align: center;
-}
+	text-align: center;}
 
 .brands h4{
 	padding: 5px 0 0;
@@ -516,21 +525,26 @@ span{
 }
 
 .brands-col{
-	padding: 2rem 0 0;
+	padding: 2rem 0 5rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	gap: 7.5rem;
+	gap: 3.5rem;
 }
 
-.ewan-logo img{
-	width: 200px;
+.athow-logo img{
+	width: 160px;
 }
 
 .chriva-logo img{
-	width: 200px;
+	width: 180px;
 	border-radius: 50%;
 }
+
+.ewan-logo img{
+	width: 190px;
+}
+
 
 /*.ait-logo{
 	height: auto;
@@ -1091,6 +1105,10 @@ span{
 }
 
 @media (max-width: 617px){
+	.about-content p{
+	/*	padding-bottom: .0125rem;*/
+		text-align: justify;
+	}
 	.portfolio-container{
 		grid-template-columns: 1fr;
 	}
