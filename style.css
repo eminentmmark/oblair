@@ -40,6 +40,23 @@ h1, h2, h3, p{
 	color: var(--text-color);
 }
 
+h4{
+	font-size: 150%;
+	text-align: left;
+	padding-bottom: 2%;
+}
+
+.list{
+	font-size: 120%;
+	text-align: left;
+	margin-left: 6%;
+	padding-bottom: 3.5%;
+}
+
+.lists li{
+	text-color: #ffffff;
+}
+
 .header{
 	position: fixed;
 	top: 0;
