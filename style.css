@@ -545,7 +545,7 @@ span{
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	gap: 7.5rem;
+	gap: 2rem;
 	flex-wrap: wrap;
 }
 
@@ -1071,13 +1071,9 @@ span{
 		justify-content: center;
 		align-items: center;	}
 	.row img{
-	width: 20vw;
-	}
-	/*.rowimg{
-		display: flex;
+		width: 20vw;
 		justify-content: center;
-		align-items: center;
-	}*/
+	}
 	.row h5{
 		font-size: 1.5rem;
 	}
