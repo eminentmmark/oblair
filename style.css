@@ -866,6 +866,9 @@ span{
 	html{
 		font-size: 92%;
 	}
+	.multiple-text{
+		font-size: 70%;
+	}
 	.no_footer_text{
 		space-between: none;
 	}
@@ -1138,6 +1141,9 @@ span{
 @media (max-width: 450px){
 	html{
 		font-size: 82%;
+	}
+		.multiple-text{
+		font-size: 70%;
 	}
 }
 
