@@ -43,14 +43,13 @@ h1, h2, h3,  p{
 h4{
 	font-size: 150%;
 	text-align: left;
-	padding-bottom: 2%;
 }
 
 .list{
 	font-size: 120%;
 	text-align: left;
 	margin-left: 6%;
-	padding-bottom: 4.5%;
+	padding: 1.5% 0  4.5%;
 }
 
 .header{
@@ -129,6 +128,10 @@ h4{
 	}
 }
 
+span{
+	color: var(--main-color);
+}
+
 .home-content h3{
 	font-size: 1.75rem;
 	font-weight: 700;
@@ -138,14 +141,10 @@ h4{
 	margin-bottom: 1.2rem;
 }
 
-span{
-	color: var(--main-color);
-}
-
 .home-content h1{
 	font-size: 3.2rem;
 	font-weight: 700;
-	padding: 8rem 0 0.3rem;
+	padding: 2rem 0 0.4rem;
 }
 
 .home-content p{
@@ -245,6 +244,11 @@ span{
 	margin: 1rem 0 2rem;
 }
 
+.italic-text p{
+	font-style: italic;
+	text-align: center;
+}
+
 .skills h2{
 	font-size: 3rem;
 	margin-bottom: 5rem;
@@ -292,11 +296,25 @@ span{
 	background-image: linear-gradient(rgba(0, 0, 0, 0.575)/* first color code*/,rgba(0,0,0,0.575)), url('images/africalawtech.jpg')/*background image*/;
 	background-position: center;
 	background-size: cover;
+	padding: 4rem 9% 5rem;
 }
 
 .portfolio h2{
 	font-size: 3rem;
 	margin-bottom: 4rem;
+}
+
+		.social-portfolio{
+		/*	background: var(--second-bg-color);*/
+			background-image: linear-gradient(rgba(0, 0, 0, 0.275)/* first color code*/), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
+			background-position: center;
+			background-size: cover;
+			padding: 4rem 9% 5rem;
+		}
+
+		.social-portfolio h2{
+			font-size: 3rem;
+			margin-bottom: 4rem;
 }
 
 .portfolio-container{
@@ -344,16 +362,18 @@ span{
 	transform: translateY(0%);
 }
 
-.portfolio-layer h4, p{
+.portfolio-layer h4{
 	color: #fff;
+	text-align: center;
 }
 
 .portfolio-layer h4{
-	font-size: 1.7rem;
+	font-size: 1.75rem;
 }
 
 .portfolio-layer p{
-	font-size: 0.9rem;
+	color: #ffffff;
+	font-size: 1.4rem;
 	font-weight: 450;
 	margin: .3rem 0 1rem;
 }
@@ -736,6 +756,7 @@ span{
 	border: 1px solid var(--submain-color);
 	background: var(--submain-color);
 	transition: 1s;
+	border: n;
 }
 
 .red-btn{
@@ -900,11 +921,14 @@ span{
 	section{
 		padding: 5.75rem 4% 2rem;
 	}
+	.home-content h3{
+		padding-top: 1.5rem;
+	}
 	/*.home-content p{
 		font-size: 1.45rem;
 	}*/
 	.buto{
-		width: 45%;
+		width: 100%;
 		gap: 1.25rem;
 	}
 	.about h2{
