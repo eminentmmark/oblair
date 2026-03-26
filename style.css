@@ -1158,6 +1158,9 @@ span{
 	/*	padding-bottom: .0125rem;*/
 		text-align: justify;
 	}
+	.italic-text p{
+		text-align: center;
+	}
 	.portfolio-container{
 		grid-template-columns: 1fr;
 	}
