@@ -347,7 +347,7 @@ span{
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: linear-gradient(rgba(0, 0, 0, 0.05), var(--main-color));
+	background: linear-gradient(rgba(0, 0, 0, 0.05), var(--main-color) );
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -360,6 +360,7 @@ span{
 
 .portfolio-box:hover .portfolio-layer{
 	transform: translateY(0%);
+	justify-content: end;
 }
 
 .portfolio-layer h4{
@@ -368,12 +369,12 @@ span{
 }
 
 .portfolio-layer h4{
-	font-size: 1.75rem;
+	font-size: 1.6rem;
 }
 
 .portfolio-layer p{
-	color: #ffffff;
-	font-size: 1.4rem;
+	color: #ffffff    ;
+	font-size: 1.3rem;
 	font-weight: 450;
 	margin: .3rem 0 1rem;
 }
@@ -398,7 +399,8 @@ span{
 	display: flex;
 	flex-direction: column;
 	flex-wrap: inherit;
-	
+	padding-top: 1.4rem;
+	padding-bottom: 0;
 }
 
 .no_footer_text{
@@ -562,7 +564,7 @@ span{
 }
 
 .brands-col{
-	padding: 2rem 0 10rem;
+	padding: 2rem 0 2rem;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -591,8 +593,14 @@ span{
 	padding: 0.9rem 30% 0.75rem;
 }
 
+.footer-text.sticky{	
+	border-top: .075rem solid var(--submain-color);
+	transition: 3s;
+}
+
 .footer-text p{
 	font-size: 1rem;
+	text-align: center;
 	color: var(--text-color);
 }
 
@@ -888,6 +896,9 @@ span{
 	html{
 		font-size: 92%;
 	}
+	.about-content h2{
+		font-size: 3rem;
+	}
 	.multiple-text{
 		font-size: 70%;
 	}
@@ -919,7 +930,7 @@ span{
 		padding: 2rem 3%;
 	}
 	section{
-		padding: 5.75rem 4% 2rem;
+		padding: 5.75rem 6.5% 2rem;
 	}
 	.home-content h3{
 		padding-top: 1.5rem;
@@ -1003,6 +1014,12 @@ span{
 	.ewan-logo img{
 	width: 140px;
 	}
+	.footer-text{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: .9rem 14% 0.75rem;	
+	}
 }
 
 @media (max-width: 768px){
@@ -1059,6 +1076,10 @@ span{
 	.buto{
 		width: 50%;
 		flex-direction: column;
+	}
+	.about-content h2{
+		font-size: 2rem;
+		text-align: left;
 	}
 	.about-content p{
 		padding-bottom: 10px;
@@ -1146,10 +1167,7 @@ span{
 		padding: 1.25rem 10% 0.5rem;	
 	}
 	.footer-text{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
+		padding: .9rem 10% 0.75rem;
 	}
 }
 
