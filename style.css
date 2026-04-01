@@ -262,7 +262,7 @@ span{
 	gap: 1.4rem;
 }
 
-.skills-container .skills-box{
+.skills-box{
 	flex: 1 1 20rem; /* for the flex-wrap */
 	background: var(--second-bg-color);
 	padding: 2.5rem 2rem 3rem;
@@ -272,7 +272,7 @@ span{
 	transition: .5s ease;
 }
 
-.skills-container .skills-box:hover{
+.skills-box:hover{
 	border-color: var(--main-color);
 	transform: scale(1.05);
 }
@@ -324,7 +324,7 @@ span{
 	gap: 1.8rem;
 }
 
-.portfolio-container .portfolio-box{
+.portfolio-box{
 	position: relative;
 	border-radius: 1.25rem;
 	box-shadow: 0 0 0.6rem var(--main-color);
@@ -341,7 +341,7 @@ span{
 	transform: scale(1.1);
 }
 
-.portfolio-box .portfolio-layer{
+.portfolio-layer{
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -466,6 +466,8 @@ span{
 .contact{
    /* width: 80%; */
 	margin: 0 10% 0;
+	margin-left: 3%;
+	margin-right: 9%;
 	text-align: left;
 	flex-direction: column;
 }
@@ -722,6 +724,10 @@ span{
 	font-size: 20px;
 }
 
+.skills2 h1{
+	padding-top: 40px;
+}
+
 .skills3{
 	padding: 0 10% 0;
 }
@@ -784,6 +790,73 @@ span{
 .services-skills a{
 	padding: 8px 24px 8px;
 }
+
+/*		easter page		*/
+
+.background2{
+	height: auto;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.175)/* first color code*/,rgba(0,0,0,0.175)), url('imgs/iPhone Wallpaper Bible Verses - WallpaperSafari.jpeg')/*background image*/;
+	background-position: fixed;
+}
+
+.wallpaper{
+	padding: 2rem 9% 5rem;
+}
+
+.wallpaper-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	gap: 2.1rem;
+}
+
+.wallpaper-box{
+	position: relative;
+	border-radius: 1.25rem;
+	box-shadow: 0 0 0.6rem var(--main-color);
+	overflow: hidden;
+	display: flex;
+
+	width: 100%;
+
+	border: .07rem solid var(--main-color);
+	/*transition: .5s ease;*/
+}
+
+.skills-box5{
+	flex: 1 1 20rem; /* for the flex-wrap */
+	background: var(--second-bg-color);
+	padding: 2.5rem 2rem 3rem;
+	border-radius: 2rem;
+	text-align: center;
+	border: .07rem solid var(--main-color);
+	transition: .5s ease;
+}
+
+.skills-box5 i{
+	font-size: 3rem;
+	color: var(--submain-color);
+}
+
+.skills-box5 h3{
+	font-size: 1.8rem;
+}
+
+.skills-box5 p{
+	font-size: 1.3rem;
+	margin: .8rem 0 1.2rem;
+}
+
+.wallpaper-box img{
+	width: 100%;
+}
+
+/*.wallpaper-box:hover{
+	border-color: var(--main-color);
+	transform: scale(1.05);
+}*/
+
+
 
 
 /*--- price table ---*/
@@ -1028,9 +1101,9 @@ span{
 		font-size: 1.8rem;
 	}*/
 	.portfolio-layer h4{
-	color: #fff;
-	text-align: center;
-	font-size: 1.4rem;
+		color: #fff;
+		text-align: center;
+		font-size: 1.4rem;
 	}
 	.social-portfolio-layer h4{
 		color: #fff;
@@ -1080,6 +1153,11 @@ span{
 	.row{
 		flex-direction: column;
 	}
+	.row img{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.servicex{
 		width: 200px;
 	}
@@ -1106,6 +1184,10 @@ span{
 		justify-content: space-between;
 		align-items: center;
 		padding: .9rem 14% 0.75rem;	
+	}
+
+	.wallpaper-container{
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
@@ -1196,59 +1278,22 @@ span{
 		margin-bottom: 2.5rem;
 		font-size: 2rem;
 	}
-	.social-portfolio h2{
+	.social-portfolio{
 		margin-bottom: 2.5rem;
-		font-size: 2rem;
-	}
-	.portfolio-layer h4{
-		color: #fff;
-		text-align: center;
-		font-size: 1.2rem;
-	}
-
-	.social-portfolio-layer h4{
-		color: #fff;
-		text-align: center;
-		font-size: 1.2rem;
-	}
-
-	.portfolio-layer p{
-		color: #ffffff    ;
-		font-size: 1rem;
-		font-weight: 450;
-		margin: .3rem 0 1rem;
-	}
-
-	.social-portfolio-layer p{
-		color: #ffffff    ;
-		font-size: 1rem;
-		font-weight: 450;
-		margin: .3rem 0 1rem;
-	}
-	.portfolio-layer a i{
-		font-size: 2rem;
-		color: var(--main-color);
-	}
-
-	.social-portfolio-layer a i{
-		font-size: 2rem;
-		color: var(--main-color);
+		font-size: 2.8rem;
 	}
 	.no_footer_text{
 		flex-direction: column;
 		text-align: center;
 	}
-	.row{
+	/*.row{
 		display: flex;
 		flex-direction: column;
-	}
-	.img{
-		display: flex;
-		justify-content: center;
-		align-items: center;	}
+	}*/
 	.row img{
 		width: 20vw;
-		justify-content: center;
+		margin-left: 35%;
+		
 	}
 	.row h5{
 		font-size: 1.5rem;
@@ -1294,7 +1339,8 @@ span{
 		padding: 1.25rem 10% 0.5rem;	
 	}
 	.footer-text{
-		padding: .9rem 10% 0.75rem;
+		padding: .9rem 6% 0.75rem;
+		flex-wrap: nowrap;
 	}
 }
 
@@ -1310,37 +1356,32 @@ span{
 		grid-template-columns: 1fr;
 	}
 	.portfolio-layer h4{
-		color: #fff;
-		text-align: center;
-		font-size: 1.6rem;
+		font-size: 1.9rem;
 	}
 	.social-portfolio-layer h4{
-		color: #fff;
-		text-align: center;
+		font-size: 1.9rem;
+	}
+	.portfolio-layer p{  ;
 		font-size: 1.6rem;
 	}
-
-	.portfolio-layer p{
-		color: #ffffff    ;
-		font-size: 1.3rem;
-		font-weight: 450;
-		margin: .3rem 0 1rem;
-	}
-
-	.social-portfolio-layer p{
-		color: #ffffff    ;
-		font-size: 1.3rem;
-		font-weight: 450;
-		margin: .3rem 0 1rem;
+	.social-portfolio-layer p{    ;
+		font-size: 1.6rem;
 	}
 	.portfolio-layer a i{
 		font-size: 2rem;
 		color: var(--main-color);
 	}
-
 	.social-portfolio-layer a i{
 		font-size: 2rem;
 		color: var(--main-color);
+	}
+
+	.skills2 h1{
+		font-size: 2.2rem;
+		padding-bottom: 10px;
+	}
+	.wallpaper-container{
+		grid-template-columns: 1fr;
 	}
 }
 
