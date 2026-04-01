@@ -175,7 +175,6 @@ span{
 
 .buto{
 	display: flex;
-	gap: 46px;
 }
 
 .buto a{
@@ -193,6 +192,7 @@ span{
 	letter-spacing: .03rem;
 	font-weight: 600;
 	transition: .65s ease;
+	margin-bottom: 15px;
 }
 
 .btn:hover{
@@ -288,7 +288,11 @@ span{
 
 .skills-box p{
 	font-size: 1rem;
-	margin: .8rem 0 2rem;
+	margin: .8rem 0 1.7rem;
+}
+
+.skills-box a{
+	justify-content: space-between;
 }
 
 .portfolio{
@@ -846,6 +850,10 @@ span{
 .skills-box5 p{
 	font-size: 1.3rem;
 	margin: .8rem 0 1.2rem;
+}
+
+.btn{
+	gap: 4px;
 }
 
 .wallpaper-box img{
