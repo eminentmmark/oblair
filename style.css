@@ -852,8 +852,9 @@ span{
 	margin: .8rem 0 1.2rem;
 }
 
-.btn{
-	gap: 4px;
+.skills-box5 a{
+	font-size: .9rem;
+	font-style: italic;
 }
 
 .wallpaper-box img{
