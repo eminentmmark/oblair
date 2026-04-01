@@ -193,6 +193,7 @@ span{
 	font-weight: 600;
 	transition: .65s ease;
 	margin-bottom: 15px;
+	margin-right: 28px;
 }
 
 .btn:hover{
