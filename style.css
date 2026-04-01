@@ -798,9 +798,13 @@ span{
 /*		easter page		*/
 
 .background2{
-	height: auto;
+	/*height: auto;*/
 	background-image: linear-gradient(rgba(0, 0, 0, 0.175)/* first color code*/,rgba(0,0,0,0.175)), url('imgs/iPhone Wallpaper Bible Verses - WallpaperSafari.jpeg')/*background image*/;
-	background-position: fixed;
+	/*background-position: fixed;*/
+	background-attachment: fixed;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	background-position: center;
 }
 
 .wallpaper{
