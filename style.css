@@ -836,6 +836,7 @@ span{
 .skills-box5 i{
 	font-size: 3rem;
 	color: var(--submain-color);
+	padding-bottom: 20px;
 }
 
 .skills-box5 h3{
