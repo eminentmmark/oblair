@@ -882,6 +882,19 @@ span{
 	width: 100%;
 }
 
+.butoo{
+	display: flex;
+	/*align-items: center;*/
+	justify-content: center;
+	padding-top: 20px;
+}
+
+.butoo a{
+	text-align: center;
+	margin-right: 0;
+	width: 34%;
+}
+
 /*.wallpaper-box:hover{
 	border-color: var(--main-color);
 	transform: scale(1.05);
