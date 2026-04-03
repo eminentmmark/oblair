@@ -175,6 +175,7 @@ span{
 
 .buto{
 	display: flex;
+	gap: 1.6rem;
 }
 
 .buto a{
@@ -193,7 +194,10 @@ span{
 	font-weight: 600;
 	transition: .65s ease;
 	margin-bottom: 15px;
-	margin-right: 28px;
+}
+
+.btn a{
+	width: auto;
 }
 
 .btn:hover{
@@ -294,6 +298,33 @@ span{
 
 .skills-box a{
 	justify-content: space-between;
+	display: flex;	
+	text-align: center;
+}
+
+.btnb{
+	display: flex;
+	padding: 0.7rem 2rem;
+	background: var(--main-color);
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem var(--main-color);
+	font-size: 1.0rem;
+	color: var(--second-bg-color);
+	letter-spacing: .03rem;
+	font-weight: 600;
+	transition: .65s ease;
+	margin-bottom: 15px;
+	width: 120 px;
+	margin-left: 34px;
+	margin-right: 34px;
+}
+
+/*.btnb a{
+	width: 56%;
+}*/
+
+.btnb:hover{
+	box-shadow: none;
 }
 
 .portfolio{
@@ -1114,7 +1145,7 @@ span{
 	}*/
 	.buto{
 		width: 100%;
-		gap: 1.25rem;
+		/*gap: 1.25rem;*/
 	}
 	/*h2{
 		font-size: 3rem;
@@ -1287,7 +1318,7 @@ span{
 		width: 90vw;
 	}
 	.buto{
-		width: 50%;
+		width: 30%;
 		flex-direction: column;
 	}
 	.about-content h2{
@@ -1318,13 +1349,17 @@ span{
 		display: flex;
 		flex-direction: column;
 	}
+	.portfolio-container{
+		grid-template-columns: 1fr;
+	}
+
 	.portfolio h2{
 		margin-bottom: 2.5rem;
 		font-size: 2rem;
 	}
-	.social-portfolio{
+	.social-portfolio h2{
 		margin-bottom: 2.5rem;
-		font-size: 2.8rem;
+		font-size: 2rem;
 	}
 	.no_footer_text{
 		flex-direction: column;
@@ -1389,6 +1424,9 @@ span{
 }
 
 @media (max-width: 617px){
+	.buto{
+		width: 40%;
+	}
 	.about-content p{
 	/*	padding-bottom: .0125rem;*/
 		text-align: justify;
@@ -1396,13 +1434,10 @@ span{
 	.italic-text p{
 		text-align: center;
 	}
-	.portfolio-container{
-		grid-template-columns: 1fr;
-	}
 	.portfolio-layer h4{
 		font-size: 1.9rem;
 	}
-	.social-portfolio-layer h4{
+	.social-portfolio-layer	 h4{
 		font-size: 1.9rem;
 	}
 	.portfolio-layer p{  ;
