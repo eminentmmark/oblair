@@ -184,7 +184,7 @@ span{
 
 .btn{
 	display: inline-block;
-	padding: 0.7rem 2rem;
+	padding: 0.7rem 1.6rem;
 	background: var(--main-color);
 	border-radius: 4rem;
 	box-shadow: 0 0 1rem var(--main-color);
@@ -318,10 +318,6 @@ span{
 	margin-left: 34px;
 	margin-right: 34px;
 }
-
-/*.btnb a{
-	width: 56%;
-}*/
 
 .btnb:hover{
 	box-shadow: none;
@@ -831,7 +827,7 @@ span{
 
 .background2{
 	/*height: auto;*/
-	background-image: linear-gradient(rgba(0, 0, 0, 0.175)/* first color code*/,rgba(0,0,0,0.175)), url('imgs/iPhone Wallpaper Bible Verses - WallpaperSafari.jpeg')/*background image*/;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.175)/* first color code*/,rgba(0,0,0,0.175)), url('img/iPhone Wallpaper Bible Verses - WallpaperSafari.jpeg')/*background image*/;
 	/*background-position: fixed;*/
 	background-attachment: fixed;
   	background-repeat: no-repeat;
@@ -1425,7 +1421,7 @@ span{
 
 @media (max-width: 617px){
 	.buto{
-		width: 40%;
+		width: 45%;
 	}
 	.about-content p{
 	/*	padding-bottom: .0125rem;*/
