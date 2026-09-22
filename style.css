@@ -303,7 +303,7 @@ span{
 }
 
 .portfolio-box{
-	opacity: .825;
+	opacity: .81; /* to make the box translucent */
 	position: relative;
 	border-radius: 1.25rem;
 	box-shadow: 0 0 0.6rem var(--main-color);
