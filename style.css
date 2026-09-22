@@ -12,7 +12,7 @@
 }
 
 :root {
-	--bg-color: #1f242d;
+	--bg-color: #1f242d; 
 	--second-bg-color: #323946;
 	/*--bg-color: #000;
 	--second-bg-color: #1f242d;*/
@@ -108,26 +108,6 @@ h4{
 	grid-template-columns: repeat(2, 1fr);
 }
 
-.home-img img{
-	width: 35vw;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	animation: floatImage 4s ease-in-out infinite;
-}
-
-@keyframes floatImage{
-	0%{
-		transform: translateY(0);
-	}
-	50%{
-	transform: translateY(-2.4rem);
-	}
-	100%{
-	transform: translateY(0);
-	}
-}
-
 span{
 	color: var(--main-color);
 }
@@ -135,10 +115,11 @@ span{
 .home-content h3{
 	font-size: 1.75rem;
 	font-weight: 700;
+	/*paddding: 2rem 0 6rem;*/
 }
 
 .home-content h3:nth-of-type(2){
-	margin-bottom: 1.2rem;
+	margin:1rem 0 .7rem;
 }
 
 .home-content h1{
@@ -150,6 +131,7 @@ span{
 .home-content p{
 	font-size: 1rem;
 	margin: 0rem 0 1rem;
+	padding-top: .7rem;
 }
 
 .social-media a{
@@ -204,11 +186,24 @@ span{
 	box-shadow: none;
 }
 
-.services{
-	height: 70vh;
-	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
-	background-position: center;
-	background-size: cover;
+.home-img img{
+	width: 35vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage{
+	0%{
+		transform: translateY(0);
+	}
+	50%{
+	transform: translateY(-4.4rem);
+	}
+	100%{
+	transform: translateY(0);
+	}
 }
 
 .about{
@@ -252,75 +247,6 @@ span{
 .italic-text p{
 	font-style: italic;
 	text-align: center;
-}
-
-.skills h2{
-	font-size: 3rem;
-	margin-bottom: 5rem;
-}
-
-.skills-container{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 1.4rem;
-}
-
-.skills-box{
-	flex: 1 1 20rem; /* for the flex-wrap */
-	background: var(--second-bg-color);
-	padding: 2.5rem 2rem 3rem;
-	border-radius: 2rem;
-	text-align: center;
-	border: .07rem solid var(--main-color);
-	transition: .5s ease;
-}
-
-.skills-box:hover{
-	border-color: var(--main-color);
-	transform: scale(1.05);
-}
-
-.skills-box i{
-	font-size: 3rem;
-	color: var(--submain-color);
-}
-
-.skills-box h3{
-	font-size: 1.8rem;
-}
-
-.skills-box p{
-	font-size: 1rem;
-	margin: .8rem 0 1.7rem;
-}
-
-.skills-box a{
-	justify-content: space-between;
-	display: flex;	
-	text-align: center;
-}
-
-.btnb{
-	display: flex;
-	padding: 0.7rem 2rem;
-	background: var(--main-color);
-	border-radius: 4rem;
-	box-shadow: 0 0 1rem var(--main-color);
-	font-size: 1.0rem;
-	color: var(--second-bg-color);
-	letter-spacing: .03rem;
-	font-weight: 600;
-	transition: .65s ease;
-	margin-bottom: 15px;
-	width: 120 px;
-	margin-left: 34px;
-	margin-right: 34px;
-}
-
-.btnb:hover{
-	box-shadow: none;
 }
 
 .portfolio{
@@ -472,6 +398,86 @@ span{
 .social-portfolio-layer a i{
 	font-size: 2rem;
 	color: var(--main-color);
+}
+
+.skills{
+	background: var(--second-bg-color);
+}
+
+.skills h2{
+	font-size: 3rem;
+	margin-bottom: 5rem;
+}
+
+.skills-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1.4rem;
+}
+
+.skills-box{
+	flex: 1 1 20rem; /* for the flex-wrap */
+	background: var(--bg-color);
+	padding: 2.5rem 2rem 3rem;
+	border-radius: 2rem;
+	text-align: center;
+	border: .07rem solid var(--main-color);
+	transition: .5s ease;
+}
+
+.skills-box:hover{
+	border-color: var(--main-color);
+	transform: scale(1.05);
+}
+
+.skills-box i{
+	font-size: 3rem;
+	color: var(--submain-color);
+}
+
+.skills-box h3{
+	font-size: 1.8rem;
+}
+
+.skills-box p{
+	font-size: 1rem;
+	margin: .8rem 0 1.7rem;
+}
+
+.skills-box a{
+	justify-content: space-between;
+	display: flex;	
+	text-align: center;
+}
+
+.btnb{
+	display: flex;
+	padding: 0.7rem 2rem;
+	background: var(--main-color);
+	border-radius: 4rem;
+	box-shadow: 0 0 1rem var(--main-color);
+	font-size: 1.0rem;
+	color: var(--second-bg-color);
+	letter-spacing: .03rem;
+	font-weight: 600;
+	transition: .65s ease;
+	margin-bottom: 15px;
+	width: 120 px;
+	margin-left: 34px;
+	margin-right: 34px;
+}
+
+.btnb:hover{
+	box-shadow: none;
+}
+
+.services{
+	height: 70vh;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.8)/* first color code*/,rgba(0,0,0,0.8)), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
+	background-position: center;
+	background-size: cover;
 }
 
 .footer{	
@@ -665,6 +671,11 @@ span{
 
 .ewan-logo img{
 	width: 200px;
+}
+
+.na-logo img{
+	width: 200px;
+	border-radius: 50%;
 }
 
 .footer-text{
@@ -1124,6 +1135,9 @@ span{
 	.ewan-logo img{
 	width: 140px;
 	}
+	.na-logo img{
+		width: 140px;
+	}
 }
 
 @media (max-width: 991px){
@@ -1248,7 +1262,10 @@ span{
 		width: 140px;
 	}
 	.ewan-logo img{
-	width: 140px;
+		width: 140px;
+	}
+	.na-logo img{
+		width: 140px;
 	}
 	.footer-text{
 		display: flex;
@@ -1299,6 +1316,7 @@ span{
 	}
 	.home-content h3{
 		font-size: 2.6rem;
+		padding:.21rem 0 .2rem;
 	}
 	/*.home-content h1{
 		font-size: 5rem;

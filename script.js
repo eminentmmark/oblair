@@ -47,7 +47,7 @@
 
 // typed js
 	const typed = new Typed('.multiple-text', {
-		strings: [/*'Content Developer',*/'Data and M&E', 'Digital Transformation', 'Programme Management', 'Strategic Communications'],
+		strings: ['Data and M&E', 'Digital Transformation', 'Programme Management', 'Strategic Communications'],
 		typeSpeed: 100,
 		backSpeed: 100,
 		backDelay: 1000,
