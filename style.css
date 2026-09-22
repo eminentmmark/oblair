@@ -262,18 +262,26 @@ span{
 	margin-bottom: 4rem;
 }
 
-		.social-portfolio{
-		/*	background: var(--second-bg-color);*/
-			background-video: linear-gradient(rgba(0, 0, 0, 0.275)/* first color code*/), url('videos/Img 1087.mp4')/*background image*/;
-			background-position: center;
-			background-size: cover;
-			padding: 4rem 9% 5rem;
-		}
+.social-portfolio{
+	position: relative;
+ 	height: 100%; /* Set desired height */
+ 	overflow: hidden;
+}		
 
-		.social-portfolio h2{
-			font-size: 3rem;
-			margin-bottom: 4rem;
-		}
+.social-portfolio video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers area without stretching */
+  z-index: -1; /* Places video behind content */	
+}
+
+.social-portfolio h2{
+	font-size: 3rem;
+	margin-bottom: 4rem;
+}
 
 .portfolio-container{
 	display: grid;
