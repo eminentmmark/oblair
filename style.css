@@ -264,7 +264,7 @@ span{
 
 		.social-portfolio{
 		/*	background: var(--second-bg-color);*/
-			background-image: linear-gradient(rgba(0, 0, 0, 0.275)/* first color code*/), url('images/Nairobi-City-County-12-2.jpg')/*background image*/;
+			background-video: linear-gradient(rgba(0, 0, 0, 0.275)/* first color code*/), url('videos/Img 1087.mp4')/*background image*/;
 			background-position: center;
 			background-size: cover;
 			padding: 4rem 9% 5rem;
@@ -794,6 +794,13 @@ span{
 	flex-wrap: wrap;
 	gap: 1.4rem;
 	padding-bottom: 30px;
+	text-align: center;
+}
+
+.skills3-box a{
+	margin-top: 1.5rem;
+	justify-content: space-between;
+	display: flex;	
 	text-align: center;
 }
 
