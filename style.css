@@ -303,6 +303,7 @@ span{
 }
 
 .portfolio-box{
+	opacity: .825;
 	position: relative;
 	border-radius: 1.25rem;
 	box-shadow: 0 0 0.6rem var(--main-color);
