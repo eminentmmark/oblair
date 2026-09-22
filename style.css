@@ -251,7 +251,7 @@ span{
 
 .portfolio{
 /*	background: var(--second-bg-color);*/
-	background-image: linear-gradient(rgba(0, 0, 0, 0.575)/* first color code*/,rgba(0,0,0,0.575)), url('images/africalawtech.jpg')/*background image*/;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.575)/* first color code*/,rgba(0,0,0,0.575)), url('images/WaveMakersNrb118.jpg')/*background image*/;
 	background-position: center;
 	background-size: cover;
 	padding: 4rem 9% 5rem;
@@ -263,7 +263,6 @@ span{
 }
 
 .social-portfolio{
-	background-color: linear-gradient(rgba(0, 0, 0, 0.575)/* first color code*/,rgba(0,0,0,0.575)), url('images/africalawtech.jpg')/*background image*/;
 	position: relative;
  	height: 100%; /* Set desired height */
  	overflow: hidden;
@@ -1205,7 +1204,7 @@ span{
 	}*/
 	.portfolio{
 		padding-bottom: 7rem;
-		background-image: linear-gradient(rgba(0, 0, 0, 0.6)/* first color code*/,rgba(0,0,0,0.6)), url('images/africalawtech2.jpg')/*background image*/;
+		background-image: linear-gradient(rgba(0, 0, 0, 0.6)/* first color code*/,rgba(0,0,0,0.6)), url('images/IMG_1099.JPG')/*background image*/;
 	}
 	.portfolio-container{
 		grid-template-columns: repeat(2, 1fr);
