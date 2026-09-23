@@ -10,12 +10,12 @@
 // Close navbar after selecting a link
 	let navLinks = document.querySelectorAll('header nav a');
 
-	navLinks.forEach(link => {
+	navbar.forEach(link => {
 		link.addEventListener('click', () => {
 			navbar.classList.remove('active');
 			menuIcon.classList.remove('bx-x');
 		});
-	});
+	});	
 
 // scroll sections active link
 	let sections = document.querySelectorAll('section');
